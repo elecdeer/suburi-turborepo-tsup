@@ -1,5 +1,6 @@
+import { sum } from "lib";
 import { mainNum } from "main";
 
-export const subNum = mainNum + 1;
+export const subNum = sum(mainNum, 1);
 
 console.log(`subNum: ${subNum}`);
