@@ -5,7 +5,9 @@
   "module": "./dist/index.mjs",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "lint": "eslint --cache 'src/**/*.ts' 'src/*.ts' --max-warnings 0",
+    "format": "prettier --cache --write 'src/**/*.ts' 'src/*.ts'"
   },
   "dependencies": {
   }
