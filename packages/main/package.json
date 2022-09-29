@@ -10,5 +10,9 @@
     "format": "prettier --cache --write 'src/**/*.ts' 'src/*.ts'"
   },
   "dependencies": {
+  },
+  "devDependencies": {
+    "@monorepo/tsconfig": "*",
+    "@monorepo/eslint-config": "*"
   }
 }

@@ -10,5 +10,7 @@
     "main": "*"
   },
   "devDependencies": {
+    "@monorepo/tsconfig": "*",
+    "@monorepo/eslint-config": "*"
   }
 }

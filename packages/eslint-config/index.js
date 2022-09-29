@@ -1,21 +1,22 @@
-{
-  "root": true,
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module",
-    "project": "./tsconfig.base.json"
+
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: "module",
+    project: "./tsconfig.base.json",
   },
-  "plugins": [
+  plugins: [
     "@typescript-eslint", "import"
   ],
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "rules": {
+  rules: {
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/require-await": "off",
@@ -47,4 +48,3 @@
     ]
   }
 }
-
