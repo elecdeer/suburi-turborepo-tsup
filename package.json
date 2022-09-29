@@ -1,0 +1,38 @@
+{
+  "name": "suburi-turborepo-tsup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elecdeer/suburi-turborepo-tsup.git"
+  },
+  "author": "elecdeer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elecdeer/suburi-turborepo-tsup/issues"
+  },
+  "homepage": "https://github.com/elecdeer/suburi-turborepo-tsup#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "tsup": "^6.2.3",
+    "turbo": "^1.5.4",
+    "typescript": "^4.8.4"
+  }
+}

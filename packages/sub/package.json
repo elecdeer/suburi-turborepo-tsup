@@ -1,0 +1,10 @@
+{
+  "name": "sub",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "main": "*"
+  }
+}
